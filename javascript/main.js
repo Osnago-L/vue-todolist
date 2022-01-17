@@ -31,7 +31,7 @@ var app = new Vue({
             this.section.splice(sectionI,1);
         },
         doneMark: function(itemI,sectionI){
-           return this.section[sectionI].doitems[itemI].done ? true : false;
+            this.section[sectionI].doitems[itemI].done = this.section[sectionI].doitems[itemI].done  ? false : true;
         },
     }
 });

@@ -37,7 +37,7 @@
                     </h2>
                     <div>
                         <ul>
-                            <li :class="{done:section[sIndex].doitems[iIndex].done}" @click="doneMark(iIndex,sIndex)" v-for="(item,iIndex) in section.doitems">
+                            <li :class="{done:section.doitems[iIndex].done}" @click="doneMark(iIndex,sIndex)" v-for="(item,iIndex) in section.doitems">
                                 <i @click="removeTask(iIndex,sIndex)" class="fa-solid fa-xmark"></i>
                                 <span>{{item.text}}</span>
                             </li>

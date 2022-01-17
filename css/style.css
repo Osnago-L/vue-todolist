@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    /* font-weight: 700; */
+}
+
+body{
+    background-color: #f6f8f9;
+     
+}
+.head{
+    background-color: white;
+    padding: 10px;
+    
+}
+.logo{
+    margin-left: 15px;  
+}
+#logo_text{
+    color: #051931 ;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    line-height: 50px;
+    vertical-align: top;
+}
+.navsquare{
+    width: 60%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px ;
+    margin-bottom: 2px;
+    background-color: white;
+    padding: 10px;
+    
+}
+.bluebutton{
+    background-color: #47adf1;
+    color: white;
+    height: 30px;
+    width: 90px;
+    border: 1px solid #47adf1;
+    border-radius: 10%;
+    cursor: pointer;
+    padding: 2px;
+    margin-left: 40px;
+    
+    
+    
+}
+.whitebutton{
+    background-color: white;
+    color:#c8cdd2 ;
+    height: 30px;
+    width: 90px;
+    border: 1px solid #c8cdd2;
+    border-radius: 10%;
+    cursor: pointer;
+    padding: 2px;
+    
+    
+}
+.mainsquare{
+    width: 60%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color: white;
+    padding: 40px 60px;
+    
+}
+.mainsquare h2{
+    color: #444851;
+    font-weight: bolder;
+    
+}
+.tasks{
+    margin-bottom: 40px;
+}
+.mainsquare p{
+    margin: 20px 0;
+}
+
+.check{
+    display: inline-block;
+    color: green;
+    border: 2px solid green;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    
+   
+    
+
+}
+.uncheck{
+ display: inline-block;
+ color: red;
+ border: 2px solid red;
+ border-radius: 50%;
+ width: 25px;
+  height: 25px;
+ text-align: center;
+ 
+
+ 
+}
+
+.editorial{
+    background-color: #45abea;
+    border-radius: 10px 10px;
+    color: white;
+    font-size: 10px;
+    padding: 6px 9px;
+   
+}
+.goals{
+    background-color: #9c72e4;
+    border-radius: 10px 10px;
+    color: white;
+    font-size: 10px;
+    padding: 6px 9px;
+}
+.recruiting{
+    background-color: #64c0a9;
+    border-radius: 10px 10px;
+    color: white;
+    font-size: 10px;
+    padding: 6px 9px;
+}
+.mobile{
+    background-color: #f29e33;
+    border-radius: 10px 10px;
+    color: white;
+    font-size: 10px;
+    padding: 6px 9px;
+}
+.website{
+    background-color: #d863a1;
+    border-radius: 10px 10px;
+    color: white;
+    font-size: 10px;
+    padding: 6px 9px;
+}
+.sales{
+
+    background-color: #b0c927;
+    border-radius: 10px 10px;
+    color: white;
+    font-size: 10px;
+    padding: 6px 9px; 
+}
+

@@ -2,6 +2,7 @@ var app = new Vue({
     el: '#app',
     data: {
       input:"",
+      active: false,
       curSection:0,
       section:[
         {
@@ -32,6 +33,9 @@ var app = new Vue({
         },
         doneMark: function(itemI,sectionI){
             this.section[sectionI].doitems[itemI].done = this.section[sectionI].doitems[itemI].done  ? false : true;
+        },
+        isActive: function(){
+           this.active = this.active ? false : true;
         },
     }
 });

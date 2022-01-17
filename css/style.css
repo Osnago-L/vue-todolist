@@ -122,5 +122,8 @@ select{
 .done{
     text-decoration: line-through;
 }
+.notactive{
+    display: none;
+}
 
 

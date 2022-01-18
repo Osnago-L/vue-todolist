@@ -115,6 +115,9 @@ select{
 .tasks{
     margin-bottom: 40px;
 }
+.taskitem{
+    word-wrap: break-word;
+}
 .mainsquare p{
     margin: 20px 0;
 }

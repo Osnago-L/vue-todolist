@@ -3,20 +3,7 @@ var app = new Vue({
     data: {
       input:"",
       curSection:0,
-      section:[
-        {
-            active: false,
-            text:"First Section",
-            doitems:[
-                {
-                    text: "First do-item",
-                    done: false
-                }
-
-            ],
-        },    
-      ],
-
+      section:[],
     },
     methods:{
         addTask: function(){

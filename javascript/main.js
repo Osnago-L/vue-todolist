@@ -2,10 +2,10 @@ var app = new Vue({
     el: '#app',
     data: {
       input:"",
-      active: false,
       curSection:0,
       section:[
         {
+            active: false,
             text:"First Section",
             doitems:[
                 {
@@ -21,21 +21,23 @@ var app = new Vue({
     methods:{
         addTask: function(){
             this.section[this.curSection].doitems.push({text:this.input,done:false})
+            this.input= ""
         },
         addSection: function(){
-            this.section.push({text:this.input,doitems:[]})
+            this.section.push({active: false,text:this.input,doitems:[]})
+            this.input= ""
         },
         removeTask: function(itemI,sectionI){
             this.section[sectionI].doitems.splice(itemI,1);
         },
         removeSection: function(sectionI){
-            this.section.splice(sectionI,1);
+            this.section.splice(sectionI,1); 
         },
         doneMark: function(itemI,sectionI){
-            this.section[sectionI].doitems[itemI].done = this.section[sectionI].doitems[itemI].done  ? false : true;
+            this.section[sectionI].doitems[itemI].done = !this.section[sectionI].doitems[itemI].done
         },
-        isActive: function(){
-           this.active = this.active ? false : true;
+        isActive: function(sectionI){
+           this.section[sectionI].active = !this.section[sectionI].active 
         },
     }
 });

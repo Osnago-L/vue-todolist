@@ -122,7 +122,7 @@ select{
 .done{
     text-decoration: line-through;
 }
-.notactive{
+.notshow{
     display: none;
 }
 

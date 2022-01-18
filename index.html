@@ -29,18 +29,19 @@
         </div>
         <div class="mainsquare">
             <section class="tasks">
+                <h1 :class='{notshow:section.length != 0}'>Non ci sono elementi</h1>
                 <div v-for="(section, sIndex) in section">
                     <h2>
-                        <span :class="{notactive:active}" @click="isActive">&#9662;</span> 
-                        <span :class="{notactive:!active}" @click="isActive">&#9652;</span>
+                        <span :class="{notshow:section.active}" @click="isActive(sIndex)">&#9662;</span> 
+                        <span :class="{notshow:!section.active}" @click="isActive(sIndex)">&#9652;</span>
                         <span>{{section.text}}</span>
                         <i @click="removeSection(sIndex)" class="fa-solid fa-trash-can"></i>
                     </h2>
-                    <div :class="{notactive:active}">
+                    <div :class="{notshow:section.active}">
                         <ul>
-                            <li :class="{done:section.doitems[iIndex].done}" @click="doneMark(iIndex,sIndex)" v-for="(item,iIndex) in section.doitems">
+                            <li :class="{done:section.doitems[iIndex].done}" v-for="(item,iIndex) in section.doitems">
                                 <i @click="removeTask(iIndex,sIndex)" class="fa-solid fa-xmark"></i>
-                                <span>{{item.text}}</span>
+                                <span @click="doneMark(iIndex,sIndex)">{{item.text}}</span>
                             </li>
                         </ul> 
                     </div>
